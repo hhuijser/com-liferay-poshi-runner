@@ -1352,9 +1352,8 @@ public abstract class BaseWebDriverImpl implements LiferaySelenium, WebDriver {
 		if (!exceptions.isEmpty()) {
 			throw new Exception(exceptions.get(0));
 		}
-		else {
-			throw new TimeoutException();
-		}
+
+		throw new TimeoutException();
 	}
 
 	@Override
